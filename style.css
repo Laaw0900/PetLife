@@ -1,0 +1,432 @@
+header{
+    background:#e0e3e0;
+    border-bottom:1px solid #eee;
+    padding:15px 0;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+
+.header-content{
+    max-width:1100px;
+    margin:auto;
+    padding:0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+body{
+    margin:0;
+    padding-top: 65px;
+    background-color: #e2f1e2;
+    
+}
+
+.logo{
+    margin:0;
+    color:#222;
+}
+
+.logo span{
+    color:#4caf50;
+}
+
+nav ul{
+    display:flex;
+    gap:75px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+}
+
+nav a:hover{
+    color:#4caf50;
+}   
+
+
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f4faf5;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #388e3c;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+
+.servicos {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+
+.card-servico {
+    background: white;
+    border: 1px solid #e5e3e3;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    transition: 0.3s
+}
+
+.card-servico:hover {
+    transform: translateY(-7px);
+}
+
+.card-servico img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-servico h3 {
+    color: #4caf50;
+    font-size: 21px;
+    margin: 20px 0 10px;
+}
+
+.card-servico p {
+    color: #666;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .grid- {
+        grid-template-columns: 1fr;
+    }
+}
+
+.servicos { 
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+
+}
+
+
+.servicos h2 {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  margin: 0 auto 40px;
+
+}
+
+
+
+
+.card-servico {
+    background: #eff2dc;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+
+}
+
+.card-servico:hover {
+    transform: translate(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+
+}
+
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+
+}
+
+.card-servico h3{
+    color: #4caf50;
+    margin-bottom: 10px;
+
+}
+
+.card-servico p {
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .grid- {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pets {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+
+}
+
+.pets h2 {
+   display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  margin: 0 auto 40px;
+  }
+
+.grid-pets { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+}
+
+.card-pet {
+    background: #eff2dc;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card-pet:hover {
+    transform: translateY(-7px);
+}
+
+.card-pet img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-pet h4 {
+    font-size: 22px;
+    color: #4caf50;
+    margin: 18px 0 8px;
+}
+
+.card-pet p {
+    color: #666;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .grid-pets {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+footer {
+    background: #f8faf8;
+    border-top: 1px solid #eee;
+    padding: 45px 20px;
+}
+
+.rodape {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.infomações p {
+    color: #666;
+    margin: 8px 0;
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Links a {
+    color: #555;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Links a:hover {
+    color: #4caf50;
+}
+
+@media (max-width: 700px) {
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Links {
+        align-items: center;
+    }
+}
+
+
+
+
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(rgba(52, 220, 91, 0.55), rgba(44, 56, 48, 0.55)),
+        url("imagens/marketing-distribuidora-pet-melhor-caminho.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-content { 
+    max-width: 750px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 35px;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #66bb6a;
+    transform: scale(1.05);
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 200px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #222;
+}
+
+.logo span {
+    color: #4caf50;
+}
+
+
+
+.grid-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-servico {
+  flex: 1 1 300px;
+  max-width: 360px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
