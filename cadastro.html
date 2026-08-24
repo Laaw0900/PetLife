@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro do Pet - PetLife</title>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="imagens/ChatGPT Image 9 de ago. de 2026, 16_33_59.png" alt="Logo PetLife">
+                <h1><span></span></h1>
+            </div>
+           <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="index.html#caes">Cães</a></li>
+                    <li><a href="index.html#gatos">Gatos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="cadastro-section container">
+            <h2>Cadastre o seu Pet</h2>
+            <p>Preencha os dados abaixo para facilitar os agendamentos e atendimentos do seu melhor amigo.</p>
+            
+            <form action="#" method="POST" class="form-cadastro">
+                <fieldset>
+                    <legend>Dados do Tutor (Dono)</legend>
+                    
+                    <div class="campo">
+                        <label for="nome-tutor">Nome Completo:</label>
+                        <input type="text" id="nome-tutor" name="nome_tutor" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo-duplo">
+                        <div class="campo">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefone">Telefone / WhatsApp:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados do Animal</legend>
+                    
+                    <div class="campo">
+                        <label for="nome-pet">Nome do Pet:</label>
+                        <input type="text" id="nome-pet" name="nome_pet" placeholder="Nome do animal" required>
+                    </div>
+
+                    <div class="campo-duplo">
+                        <div class="campo">
+                            <label for="especie">Espécie:</label>
+                            <select id="especie" name="especie" required>
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="cachorro">Cão</option>
+                                <option value="gato">Gato</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="raca">Raça:</label>
+                            <input type="text" id="raca" name="raca" placeholder="Ex: Golden, SRD (Vira-lata)" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-duplo">
+                        <div class="campo">
+                            <label for="idade">Idade (anos/meses):</label>
+                            <input type="text" id="idade" name="idade" placeholder="Ex: 2 anos">
+                        </div>
+
+                        <div class="campo">
+                            <label for="sexo">Sexo:</label>
+                            <select id="sexo" name="sexo" required>
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="macho">Macho</option>
+                                <option value="femea">Fêmea</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="porte">Porte do Animal:</label>
+                        <select id="porte" name="porte">
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="observacoes">Observações Médicas / Comportamento:</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma alergia, medicação em uso ou comportamento especial?"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn">Cadastrar Pet</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="infomações">
+                <p> Powered by: Flavio e Gustavo </p>
+                <p> Rua xv de novembro, 0990 - Centro</p>
+                <p>(42) 9999-9999 | petlive@gmail.com</p>
+             </div>
+             <div class="Links">
+                <a href="#">Sobre nós</a>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Banho e tosa</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+             </div>
+        </div>
+    </footer>
+</body>
+</html>
