@@ -8,11 +8,16 @@ Nosso projeto é um Pet Shop completo, criado para oferecer produtos e cuidados 
 Autores: Flavio e Gustavo Henrique. 2° período de TADS
 
 
-**Estrutura do projeto **
+Estrutura do projeto 
 
 index.html - Página inicial
+
 produtos.html - Produtos que oferecemos no PetShop
+
 farmácia.html - remedios e produtos que oferecemos
+
 banho.html - opçoes de banho e tosa e tabela de preços para seu pet
+
 cadastro.html - pagina para você cadastrar seu pet
+
 style.css - Estilização das páginas
