@@ -1,4 +1,3 @@
-# PetLife
 Projeto de criação HTML/CSS de uma platraforma de petshop
 
 Sobre o Projeto
@@ -7,8 +6,7 @@ Nosso projeto é um Pet Shop completo, criado para oferecer produtos e cuidados 
 
 Autores: Flavio e Gustavo Henrique. 2° período de TADS
 
-
-Estrutura do projeto 
+Estrutura do projeto
 
 index.html - Página inicial
 

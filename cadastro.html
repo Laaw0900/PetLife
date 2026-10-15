@@ -32,7 +32,8 @@
             <h2>Cadastre o seu Pet</h2>
             <p>Preencha os dados abaixo para facilitar os agendamentos e atendimentos do seu melhor amigo.</p>
             
-            <form action="#" method="POST" class="form-cadastro">
+            <!-- A tag form agora envolve corretamente todos os campos e o botão -->
+            <form id="formCadastro" action="#" method="POST" class="form-cadastro">
                 <fieldset>
                     <legend>Dados do Tutor (Dono)</legend>
                     
@@ -53,6 +54,7 @@
                         </div>
                     </div>
                 </fieldset>
+                
                 <fieldset>
                     <legend>Dados do Animal</legend>
                     
@@ -120,15 +122,18 @@
                 <p> Powered by: Flavio e Gustavo </p>
                 <p> Rua xv de novembro, 0990 - Centro</p>
                 <p>(42) 9999-9999 | petlive@gmail.com</p>
-             </div>
-             <div class="Links">
+           </div>
+           <div class="Links">
                 <a href="#">Sobre nós</a>
                 <a href="#">Nossos Serviços</a>
                 <a href="#">Banho e tosa</a>
                 <a href="#">Produtos</a>
                 <a href="#">Contato</a>
-             </div>
+           </div>
         </div>
     </footer>
+
+    <!-- Script JavaScript -->
+    <script src="cadastro.js" defer></script>
 </body>
 </html>

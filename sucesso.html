@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Realizado - PetLife</title>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="imagens/ChatGPT Image 9 de ago. de 2026, 16_33_59.png" alt="Logo PetLife">
+                <h1><span></span></h1>
+            </div>
+           <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="index.html#caes">Cães</a></li>
+                    <li><a href="index.html#gatos">Gatos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="cadastro-section container" style="text-align: center; padding: 40px 20px;">
+            <div class="card-sucesso" style="background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto;">
+                <span style="font-size: 50px;">🐾</span>
+                <h2 style="margin-top: 15px; color: #333;">Tudo Pronto!</h2>
+                <p id="mensagemSucesso" style="font-size: 1.2rem; color: #555; margin: 20px 0; line-height: 1.6;">
+                    Carregando informações...
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; margin-top: 30px;">
+                    <a href="cadastro.html" class="btn" style="text-decoration: none;">Cadastrar Outro Pet</a>
+                    <a href="index.html" class="btn" style="text-decoration: none; background-color: #6c757d;">Voltar ao Início</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="infomações">
+                <p> Powered by: Flavio e Gustavo </p>
+                <p> Rua xv de novembro, 0990 - Centro</p>
+                <p>(42) 9999-9999 | petlive@gmail.com</p>
+           </div>
+           <div class="Links">
+                <a href="#">Sobre nós</a>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Banho e tosa</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+           </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mensagemElemento = document.getElementById('mensagemSucesso');
+            
+            // Recupera a lista de cadastros do localStorage
+            const petsCadastrados = JSON.parse(localStorage.getItem('petlife_cadastros')) || [];
+
+            if (petsCadastrados.length > 0) {
+                // Pega o último pet cadastrado
+                const ultimoCadastro = petsCadastrados[petsCadastrados.length - 1];
+                const nomeTutor = ultimoCadastro.tutor.nome;
+                const nomePet = ultimoCadastro.pet.nome;
+
+                // Exibe a mensagem solicitada
+                mensagemElemento.innerHTML = `Olá <strong>${nomeTutor}</strong>! Seu pet <strong>${nomePet}</strong> foi cadastrado em nosso sistema!`;
+            } else {
+                mensagemElemento.textContent = "Nenhum cadastro recente encontrado.";
+            }
+        });
+    </script>
+</body>
+</html>
